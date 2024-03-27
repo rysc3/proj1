@@ -4,7 +4,8 @@ main :: IO ()
 -- main = putStrLn "Hello, Haskell!"
 main = do 
   -- Maybe we should define some global things here
-  let input = "Dictionaries/Dictionary.txt"   -- dictionary
+  let input = "Dictionaries/01-Dictionary.txt"   -- dictionary
+  let scoring = "01-Socring.txt"                   -- scoring     -- TODO figure out how to take user input for these
   let wordSize = 7                            -- # of letters we give the player, we can take input and set this to what they want to play with
 
 
@@ -56,3 +57,12 @@ main = do
   -}
   -- scoreWord :: [Char] -> int
   -- scoreWord x = undefined
+
+  {-
+    Fucntion takes scoring and returns tuple (<LETTER>, <SCORE>)
+  -}
+  -- scores :: [Char] -> (Char, Int)
+  -- -- read the scoring input
+  -- contents = readFile scoring
+  -- scores xs = (head xs, read (tail xs) :: 1)
+  -- putStrLn $ show $ scores "A"
